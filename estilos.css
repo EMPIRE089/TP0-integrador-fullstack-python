@@ -281,6 +281,11 @@ span:hover {
     
 }
 
+#b-columna-fila{
+    grid-template-columns: 4fr 2fr 4fr;
+    grid-auto-rows: 2fr 2fr 2fr;
+} 
+
 #c-columna-fila{
     grid-template-columns: 4fr 2fr;
     grid-auto-rows: 2fr 2fr 2fr;
