@@ -36,14 +36,13 @@ a:hover:not(span > a) {
 .navegador,
 .enla{font-size: 15px;}
 header {
-    position: absolute;
+    position: relative;
     background-color: black;
     padding: 20px;
     padding-left: 35px;
     position: sticky;
     top: 0;
     color: aliceblue;
-    
 }
 
 .f1 {
@@ -321,8 +320,7 @@ footer{
 
 
 @media screen and (max-width: 780px) {
-    .navegador,
-    .enla,
+    .contenedor__cab,
     .f1,
     .f2,
     .f3,
@@ -331,13 +329,35 @@ footer{
     background-attachment: scroll;
       grid-column:1 1 ;
         
-        width: 100%;
-        
-        
+        width: 100%;        
     }
+ /*   header {
+    position: absolute;
+    background-color: black;
+    padding: 20px;
+    padding-left: 35px;
+    position: sticky;
+    top: 0;
+    color: aliceblue;
+    
+}*/
     .navegador{
-        margin-right: 70px;
+        width: 100%;
+        position: relative;
     }
+    .enla{
+        margin-left: 55%;
+        width: 50%;
+        position: fixed;
+    }
+    
+    .contenedor__cab{
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 1fr;
+    grid-auto-rows: 2fr 2fr 2fr;
+    position: relative;
+    
+}
     
 .formulario__label{
         font-weight: 800;
