@@ -5,7 +5,7 @@ a:hover:not(span > a) {
 
 .contenedor__cab{
     display: grid;
-    grid-template-columns: 0.3fr 0.8fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr;
     grid-auto-rows: 2fr 2fr 2fr;
     column-gap: 5px;
     grid-row-gap: 5px;
@@ -13,21 +13,28 @@ a:hover:not(span > a) {
 }
 .iconop{
     width: 70px;
-    position: absolute;
+    position:absolute;
+    margin-right: %;
+    
 }
 .icomot{
     font-size: 15px;
-    margin-top: 28%;
+    padding-top: 39px;
+    padding-left: 0px;
     margin-right: auto;
-}
-.navegador{
-    width: auto;
+    margin-top: 6px;
     
 }
-.enla{
-    margin-left: 0;
-    margin-top: 0px;
+.navegador{
+    width: 130%;    
 }
+.enla{
+    margin-left: 50px;
+    margin-top: 0px;
+    width: 100%;
+}
+.navegador,
+.enla{font-size: 15px;}
 header {
     position: absolute;
     background-color: black;
