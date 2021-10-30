@@ -329,7 +329,8 @@ footer{
     background-attachment: scroll;
       grid-column:1 1 ;
         
-        width: 100%;        
+        width: 100%;
+        
     }
  /*   header {
     position: absolute;
@@ -343,6 +344,7 @@ footer{
 }*/
     .navegador{
         width: 100%;
+        margin-right: 90px;
         position: relative;
     }
     .enla{
