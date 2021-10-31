@@ -172,10 +172,10 @@ span:hover {
 .input-error-activo{
     display: block;
 }
-.fa-exclamation-triangle,
+/*.fa-exclamation-triangle,
 .fa-times{
     color:darkred;
-    }
+    }*/
 .formulario__validacion{
     position: relative;
     left: 88%;
@@ -266,10 +266,16 @@ span:hover {
     display: block;
 }
 /* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__label{
+    color: #1ed12d;
+}
 
 .formulario__grupo-correcto .formulario__validacion{
     color: #1ed12d;
     opacity: 1;
+}
+.formulario__grupo-correcto .formulario__input{
+    border: 3px solid #1ed12d;
 }
 .formulario__grupo-incorrecto .formulario__label{
     color: #bb2929;
@@ -321,7 +327,7 @@ footer{
     padding-bottom: 0;
 }
 
-.futer{
+.futer__img{
     width: 200px;
     height: 100px;
     position: relative;
@@ -331,7 +337,9 @@ footer{
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
+    html{min-width: 442px;}
+    
     .contenedor__cab,
     .f1,
     .f2,
@@ -341,14 +349,14 @@ footer{
     background-attachment: scroll;
       grid-column:1 1 ;
         
-        width: 100%;
+    width: 100%;
         
     }
     .icomot{font-size: 12px;}
 .navegador,
-.enla{font-size: 13px;
+.enla{font-size: 12px;
     line-height: 28px;
-    width: 100%;
+    width: auto;
     }
     .menu__botones{
         font-size: 86%;
@@ -358,7 +366,7 @@ footer{
         
     }
     .enla{
-        margin-left: 1%;
+        margin-left: 0%;
     
     }
     

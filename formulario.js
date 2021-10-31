@@ -39,7 +39,7 @@ const validarCampo = (expresion, input, campo) => {
     if(expresion.test(input.value)){
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
-		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
 		document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo__${campo} .input-error`).classList.remove('input-error-activo');
 		campos[campo] = true;
@@ -83,9 +83,8 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	if(campos.nombre && campos.contraseña && campos.contraseña2 && campos.mail){
-		formulario.reset();
-
+	if(campos.nombre && campos.mail && campos.contraseña && campos.contraseña2){
+		
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
