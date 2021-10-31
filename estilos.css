@@ -348,26 +348,26 @@ footer{
 .navegador,
 .enla{font-size: 13px;
     line-height: 28px;
-    
+    width: 100%;
+    }
+    .menu__botones{
+        font-size: 86%;
     }
     .navegador{
-        width: 200px;
-        margin-right: 140px;
-        position: relative;
+        
         
     }
     .enla{
-        margin-left: 45%;
-        width: 270px;
-        position: fixed;
+        margin-left: 1%;
+    
     }
     
     .contenedor__cab{
     display: grid;
-    grid-template-columns: 0.5fr 0.8fr 1fr;
+    grid-template-columns: 0fr 0.7fr 1fr;
     grid-auto-rows: 2fr 2fr 2fr;
     position: relative;
-    
+        
 }
     
 .formulario__label{
@@ -403,8 +403,7 @@ footer{
     color: aliceblue;
     font-size: 12px;
     font-weight: 600;
-    
-    
+      
 }
     .iconop{
     width: 40px;
