@@ -1,3 +1,8 @@
+html{width: auto;
+    margin: auto;
+    
+}
+
 a:hover:not(span > a) {
     text-decoration: underline overline !important;
     
@@ -31,7 +36,7 @@ a:hover:not(span > a) {
 .enla{
     margin-left: 50px;
     margin-top: 0px;
-    width: 100%;
+    width: 260px;
 }
 .navegador,
 .enla{font-size: 15px;}
@@ -127,6 +132,9 @@ span:hover {
     
     
 }
+
+/* ----- -----  FORMULARIO ----- ----- */
+ 
 #formulario{
     display: grid;
     column-gap: 20px;
@@ -178,13 +186,14 @@ span:hover {
 }
 
 
-
 .formulario__label{
     display: block;
     font-weight: 700;
     margin-bottom: -15px;
     cursor: pointer;
 }
+
+
 
 .formulario__btn{
     height: 45px;
@@ -203,6 +212,8 @@ span:hover {
 .formulario__btn:hover{
     box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
+
+
 .formulario__mensaje-exito{
     font-size: 19px;
     font-weight: 300;
@@ -222,25 +233,6 @@ span:hover {
     display: block;
 }
 
-.formulario__grupo-correcto,
-.formulario__validacion{
-    color: #1ed12d;
-    opacity: 1;
-}
-.formulario__grupo-incorrecto,
-.formulario__label{
-    color: #bb2929;
- 
-}
-.formulario__grupo-incorrecto,
-.formulario__validacion{
-    color: #bb2929;
-    opacity: 1;
-}
-.formulario__grupo-incorrecto,
-.formulario__input{
-    border: 3px solid #bb2929;
-}
 
 .grupo__submit{
     display: grid;
@@ -273,10 +265,30 @@ span:hover {
 .formulario__mensaje-active{
     display: block;
 }
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion{
+    color: #1ed12d;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label{
+    color: #bb2929;
+    
+ 
+}
+.formulario__grupo-incorrecto .formulario__validacion{
+    color: #bb2929;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #bb2929;
+    
+}
+
+/*FIN DEL FORMULARIO*/
 
 
-
-
+/*CONTENEDOR FORMULARIO*/
 .item {
     margin: 5px;
     padding: 10px;
@@ -332,24 +344,21 @@ footer{
         width: 100%;
         
     }
- /*   header {
-    position: absolute;
-    background-color: black;
-    padding: 20px;
-    padding-left: 35px;
-    position: sticky;
-    top: 0;
-    color: aliceblue;
+    .icomot{font-size: 12px;}
+.navegador,
+.enla{font-size: 13px;
+    line-height: 28px;
     
-}*/
+    }
     .navegador{
-        width: 100%;
-        margin-right: 90px;
+        width: 200px;
+        margin-right: 140px;
         position: relative;
+        
     }
     .enla{
-        margin-left: 55%;
-        width: 50%;
+        margin-left: 45%;
+        width: 270px;
         position: fixed;
     }
     
