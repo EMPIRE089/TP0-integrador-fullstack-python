@@ -256,11 +256,15 @@ span:hover {
 }
 .grupo-aviso{
     background-color:dodgerblue;
-    height: 45px;
+    height: auto;
     line-height: 35px;
-    margin-left: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     border-radius: 10px;
     border-style: solid;
+    
+
+    
     
 }
 
@@ -344,9 +348,13 @@ footer{
     position: relative;}
 .futer__img{
     width: 100px;
-    position: relative;
-    
-    
+    position: relative;    
+}
+
+.mailimg,
+.wasapimg{
+    width: 80px;
+    cursor:pointer;
 }
 .futer__contenedor{
     display: grid;
@@ -379,6 +387,12 @@ footer{
         
         
     }
+    .grupo-aviso{
+        width: auto;
+        height: auto;
+        margin-left: 2%;
+        margin-right: 2%;}
+    
     .enla{
         margin-left: 0%;
     
